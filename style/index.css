@@ -1,7 +1,120 @@
-*,
-body,
-html {
+/* body {
+  background-color: blue;
+} */
+/* html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+} */
+
+@font-face {
+  src: url("SFDistantGalaxyOutline-Ital.ttf");
+  font-family: SF Distant Galaxy;
 }
+
+@font-face {
+  src: url("junegull\ rg.otf");
+  font-family: junegull;
+}
+
+body {
+  width: 100%;
+  text-align: center;
+  background-image: url("SWbackgroundimg.jpeg"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#Main-div {
+  width: 100%;
+}
+
+h1 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 45px;
+  font-family: SF Distant Galaxy;
+  color: #f85e00;
+}
+
+#First-Section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  border: 6px solid;
+  margin-top: 10px;
+  object-fit: cover;
+}
+
+img:hover {
+  transform: scale(0.8) rotate(5deg);
+  box-shadow: 0 0 10px #f85e00(9, 76, 18, 0.642);
+  border: 3px solid #78290f;
+}
+
+button {
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+  font-size: 19px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  border-radius: 10px;
+  padding: 5px 10px;
+  margin-top: 5px;
+  border: 3px solid;
+  background-image: linear-gradient(#78290f, #f85e00);
+}
+
+button:hover {
+  transform: scale(0.95);
+  background-image: linear-gradient(#5d200a, #d14c00);
+}
+
+.name {
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  font-size: 14px;
+  font-family: junegull;
+  font-weight: bold; 
+  margin: 5px 0; 
+}
+
+.gender {
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  font-size: 14px;
+  font-family: junegull;
+  font-weight: bold; 
+  margin: 5px 0; 
+}
+
+.height {
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  font-size: 14px;
+  font-family: junegull;
+  font-weight: bold; 
+  margin: 5px 0; 
+}
+
+/* @media (max-width: 768px) {
+  #First-Section {
+    flex-wrap: wrap;
+  }
+  .character {
+    width: 100%;
+    text-align: center;
+  }
+  img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+  }
+} */
